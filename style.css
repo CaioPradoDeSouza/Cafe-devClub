@@ -86,6 +86,10 @@ section{
     display: inline-block;
 }
 
+.btn:hover{
+    letter-spacing: 0.1rem;
+}
+
 .home-container{
     background: url("img/home-img.jpg");
     background-position: center;
@@ -119,6 +123,7 @@ section{
     font-size: 3rem;
     color: var(--main-color);
     text-transform: uppercase;
+    margin: 1rem;
 }
 
 .title span{
@@ -145,4 +150,94 @@ section{
     font-size: 1.3;
     padding: 1rem 0;
     line-height: 1.8;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 0.7rem;
+}
+
+.menu .box-container .box{
+    max-width: 350px;
+    text-align: center;
+    border: var(--border);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+.menu .box-container .box .img{
+    height: 7rem;
+}
+
+.menu .box-container .box h3{
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    font-size: 1.2rem;
+    padding: 0.4rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    font-weight: 200;
+}
+
+
+.menu .box-container .box:hover>*{
+    letter-spacing: 0.1rem;
+}
+
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    line-height: 1.6rem;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.address{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.address p{
+    padding: 10px;
+    font-weight: 500;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.footer .share i{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.footer .share i:hover{
+    transform: scale(1.2);
+    color: var(--main-color);
 }
